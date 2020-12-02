@@ -1,0 +1,131 @@
+.circle-gradient:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: radial-gradient(circle, $principal 64%, #2a2c30 100%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bande-couleur-produit {
+  width: 100%;
+}
+
+.row {
+  align-items: center;
+}
+
+.vendu {
+  color: $blanche;
+  display:table;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: $number;  
+}
+
+.price {
+  color: $blanche;
+  display:table;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  font-family: $number;
+}
+
+.price:after {
+  content: '€';
+  font-size: 0.65em;
+  vertical-align:text-top;
+}
+
+.titre-produit {
+  color: $blanche;
+  border-width: 2px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.couverture {
+  width: 95%;
+  border-radius:2px;
+  margin: 10px;
+  border: 2px solid $blanche;
+}
+
+.breadcrumb {
+  background-color: transparent;
+}
+
+.breadcrumb > .active {
+  color:$blanche;
+  opacity:0.7;
+}
+
+.breadcrumb-item {
+  a {
+    color:$blanche;
+    text-decoration: underline;
+    &:hover {
+      color:$secondaire;
+      text-decoration: none;
+    }
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: $blanche;
+  content: ">";
+}
+
+.description {
+  color: white;
+  width: 100%;
+}
+
+.flexdiv {
+  display: flex;
+  justify-content: center;
+  border-width: 2px;
+  border-color: white;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  margin: 15px 0;
+}
+
+.photos-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  padding: 25px 15px 25px 15px ;
+}
+
+.photo-article {
+  height: 150px;
+  border-radius:2px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  border: 2px solid $blanche;
+  @include md {
+    height:100px;
+  }
+  @include sm {
+    height: 60px;
+  }
+}
+
+.reserve {
+  text-shadow: 0 2px 2px rgba(0,0,0,1);
+  color:white;
+  position: absolute;
+  top: 30%;
+  left:50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,17 @@
+<div class="product-card-tjd" style="background-image: url(<%= product.couverture %>);">
+  <div class="infos"></div>
+  <div class="nom"> <%= (product.nom_fr).truncate(28) %></div>
+  <% if product.vendu %>
+  <div class="prix"><span class="badge badge-primary"><%= t(:vendu_text) %></span></div>
+  <% else %>
+  <div class="prix"><%= product.prix %>€</div>
+  <% end %>
+  <%= link_to contactsproduit_path(product), class:'product-card-tjd-link' do %>
+    <span class="sr-only">link to <%= product.nom %></span>
+  <% end %>
+  <% if product.vendu %>
+    <h3><%= t(:vendu_text) %></h3>
+    <% elsif product.reserve %>
+    <h3><%= t(:reserve_text) %></h3>
+  <% end %>
+</div>

@@ -1,0 +1,8 @@
+meta_product_name: "Thomas Jouvel Dev - Module Vitrine"
+meta_title: "Titre Thomas Jouvel Dev - Module Vitrine" # < 65 chars
+meta_description: "Descrition Thomas Jouvel Dev - Module Vitrine" # < 170 chars
+meta_image: 'https://images.unsplash.com/photo-1598594661945-d7e693e4522c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80' # should exist in `app/assets/images/`
+meta_image_alt: "Alt de l'image"
+meta_image_width: "1200"
+meta_image_height: "630"
+twitter_account: "@thomas_jouvel_dev"   # required for Twitter Cards

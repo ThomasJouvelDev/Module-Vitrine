@@ -1,2 +1,21 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= render 'shared/banner', link:"yes" %>
+<div class="wrapper-principal">
+  <h2><%= t(:nouveaute) %></h2>
+  <%= image_tag "bande_blanche.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur"%>
+  <div class="cards-tjd-container">
+    <% @articles.each do |a| %>
+      <%= render 'shared/product-card', product: a %>
+    <% end %>
+  </div>
+</div>
+<div class="wrapper-blanc">
+  <h2><%= t(:categorie) %></h2>
+  <%= image_tag "bande_gris.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur"%>
+</div>
+<div class="catego-card-tjd-container">
+  <% CATEGORIES.each do |cat| %>
+   <%= render 'shared/catego-card', cat: cat %>
+  <% end %>
+</div>
+<%= render 'shared/info-card' %>
+

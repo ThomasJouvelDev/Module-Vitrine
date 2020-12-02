@@ -1,0 +1,7 @@
+<% content_for :meta_title, ("Contact #{INFOS[:societe]}").truncate(65) %>
+<div class="contact-banner">
+  <div><h1><%= t(:contact_nous) %></h1>
+  <%= image_tag "bande_blanche.png", alt: "image divider", title: 'mini-logo', loading: "lazy", class:"bande-couleur"%>
+    <%= render 'shared/form' %></div>
+</div>
+<%= render 'shared/info-card' %>

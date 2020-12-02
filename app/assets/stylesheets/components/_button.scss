@@ -1,0 +1,13 @@
+.bouton {
+  color: $principal;
+  background-color: $blanche;
+  transition: all 0.15s ease;
+  margin-top: 20px;
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+.bouton:hover {
+  color:$secondaire !important;
+  opacity: 1;
+}

@@ -1,0 +1,13 @@
+<% content_for :meta_title, ("Showroom de #{INFOS[:societe]}").truncate(65) %>
+<%= image_tag 'https://images.unsplash.com/photo-1460776960860-7adc30a4e69d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80', alt: "showroom entrance picture", title:"Showroom", loading:"lazy", class: "showroom" %>
+<div class="whitewrap">
+  <div class="container">
+    <%= image_tag "bande_gris.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur margin-divider"%>
+    <p class= "prez"><%= t(:showroom_text) %></p>
+    <%= image_tag "bande_gris.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur margin-divider"%>
+  </div>
+</div>
+<div class="container wrapper-principal" id="mapinfos" data-name="<%= INFOS[:siege] %>" data-address="<%= INFOS[:adresse] %>">
+  &nbsp;<h1><i class="fas fa-map-marker-alt"></i> <%= INFOS[:adresse] %></h1> &nbsp;
+  <div id="map" class="leafletmap"></div>
+</div>

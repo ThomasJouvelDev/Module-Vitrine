@@ -1,0 +1,14 @@
+<% content_for :meta_title, ("#{t(:qui_sommes_nous)} - #{INFOS[:societe]}").truncate(65) %>
+<div class="bannernous">
+  <%= image_tag "Logo_blanc.png", alt: "logo", title: "Fabienne Lamberger-Ponvianne Logo", loading: "lazy", class:" logo" %>
+  <h1 class="sr-only">Fabienne Lamberger Ponvianne, Qui somme-nous, Description</h1>
+</div>
+<div class="whitewrap">
+  <div class="container">
+    <%= image_tag "bande_gris.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur margin-divider"%>
+      <%= simple_format(t(:service_text), class:'prez') %>
+      <%= simple_format(t(:service_text2), class:'prez') %>
+    <%= image_tag "bande_gris.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur margin-divider"%>
+  </div>
+</div>
+<%= render 'shared/info-card' %>

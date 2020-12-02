@@ -1,0 +1,30 @@
+.info-card-tjd {
+  border-color: $blanche;
+  color:$blanche;
+  padding: 40px 100px 40px 100px;
+  margin: 55px 20px 55px 20px;
+  border-style: solid;
+  border-width: 5px;
+  background-image: $info-card-img;
+  background-size: cover !important;
+  a {
+    color: $blanche;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  a:hover{
+    color:$secondaire;
+    text-decoration: none;
+  }
+  @include md {
+    padding: 20px;
+    h2 {
+      font-size: 1.7rem !important;
+    }
+    h3 {
+      font-size: 1.3rem !important;
+    }
+  }
+}
+

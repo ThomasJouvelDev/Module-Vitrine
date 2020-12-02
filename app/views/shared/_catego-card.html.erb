@@ -1,0 +1,6 @@
+<div class="catego-card-tjd" style="background-image: linear-gradient(-225deg, rgba(95, 95, 95, 0.3) 0%, rgba(0,0,0,0.3) 50%), url(<%= cat[:url] %>);">
+  <h2><%= t cat[:key] %></h2>
+  <%= link_to cat[:key], :class => 'catego-card-tjd-link' do %>
+    <span class="sr-only">link to <%= t cat[:key] %> </span>
+  <% end %>
+</div>

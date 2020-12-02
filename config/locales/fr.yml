@@ -1,0 +1,274 @@
+fr:
+  # navbar / categories
+  accueil: "ACCUEIL"
+  service: "NOS SERVICES"
+  galerie: 'GALERIE'
+  categories: "CATÉGORIES"
+  velo: "Vélos"
+  chaussure: "Chaussures"
+  miroir: "Miroirs"
+  jouet: "Jouets anciens"
+  poupee: "Poupées"
+  deco: "Décorations"
+  # mobilier / sous categorie 
+  mobilier: "Mobilier"
+  commode: "Commodes"
+  bureau: "Bureaux"
+  siege: "Sièges"
+  table: "Tables"
+  # pied de pages
+  mentionslegales_link: 'Mentions légales'
+  pied: '© 2020 - Module Vitrine - Tous droits réservés - Thomas Jouvel Dev - '
+  #home & general
+  collection: "Notre Collection"
+  nouveaute: "Les Nouveautés"
+  categorie: "Nos Catégories"
+  text_collection: "Découvrez notre collection"
+  categories_mobilier: "Nos catégories de meubles"
+  de: "de"
+  produit: "produits"
+  #Contact
+  rdv: 'Sur rendez-vous : 7 jours sur 7'
+  antiquaire: "Antiquaire Généraliste, Objets d'Art"
+  contact_nous: "CONTACTEZ - NOUS"
+  votre_nom: "Votre nom"
+  votre_email: "Votre e-mail"
+  votre_tel: "Votre n° de téléphone"
+  envoyer: "Envoyer"
+  obligatoire: "Obligatoire"
+  optionel: "Optionnel"
+  votre_message: "Votre message..."
+  contact_article: "Nous contacter pour cet article"
+  erreur: "erreur(s)"
+  empecher_message: "empêche(nt) votre message de s'envoyer"
+  merci_message: "Merci, votre message a bien été envoyé !"
+  #produit
+  prix: "Prix"
+  reserve_text: 'RÉSERVÉ'
+  vendu_text: 'VENDU'
+  article_vendu: "Article vendu"
+  decouvrir: "Articles similaires"
+  service_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis non mauris ac pharetra. Nam viverra urna sed rhoncus rhoncus. Curabitur a turpis massa. Proin tincidunt dui quis sapien elementum condimentum. Sed varius efficitur bibendum. In gravida nisl non augue pharetra dictum. Suspendisse tincidunt ipsum id urna semper placerat. Vestibulum vitae ornare lorem."
+  service_text2: "Curabitur ac ultricies ex, id pulvinar arcu. In hac habitasse platea dictumst. Proin in dolor dictum, rutrum justo eu, sodales velit. Nulla non ex vitae ipsum vulputate sollicitudin. Ut nibh arcu, dignissim vitae suscipit non, tincidunt eu nisi. Nunc sit amet purus nulla. Maecenas at pretium odio. In hac habitasse platea dictumst. Nullam sed metus dolor. Morbi convallis feugiat ex, id tincidunt dolor tincidunt id. Cras elementum nulla nibh, non imperdiet enim ullamcorper eget. Sed massa nisl, mollis non dui vel, pulvinar faucibus velit."
+  showroom_text: "Morbi lacus diam, tempus id sem eu, eleifend ullamcorper neque. Proin interdum nisl sit amet diam convallis ornare. In porttitor tincidunt lacus et ultricies. Duis convallis convallis blandit. Vestibulum vestibulum, elit id pulvinar volutpat, neque leo dignissim turpis, in placerat urna ligula vel sem. Suspendisse posuere id nibh at lobortis. Integer venenatis lobortis sem ac laoreet."
+  # Autre
+  time:
+    formats:
+      long: "%Y-%m-%d %H:%M:%S"
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'La validation a échoué : %{errors}'
+        restrict_dependent_destroy:
+          has_one: Vous ne pouvez pas supprimer l'enregistrement car un(e) %{record}
+            dépendant(e) existe
+          has_many: Vous ne pouvez pas supprimer l'enregistrement parce que les %{record}
+            dépendants existent
+  date:
+    abbr_day_names:
+    - dim
+    - lun
+    - mar
+    - mer
+    - jeu
+    - ven
+    - sam
+    abbr_month_names:
+    - 
+    - jan.
+    - fév.
+    - mar.
+    - avr.
+    - mai
+    - juin
+    - juil.
+    - août
+    - sept.
+    - oct.
+    - nov.
+    - déc.
+    day_names:
+    - dimanche
+    - lundi
+    - mardi
+    - mercredi
+    - jeudi
+    - vendredi
+    - samedi
+    formats:
+      default: "%d/%m/%Y"
+      long: "%e %B %Y"
+      short: "%e %b"
+    month_names:
+    - 
+    - janvier
+    - février
+    - mars
+    - avril
+    - mai
+    - juin
+    - juillet
+    - août
+    - septembre
+    - octobre
+    - novembre
+    - décembre
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: environ une heure
+        other: environ %{count} heures
+      about_x_months:
+        one: environ un mois
+        other: environ %{count} mois
+      about_x_years:
+        one: environ un an
+        other: environ %{count} ans
+      almost_x_years:
+        one: presqu'un an
+        other: presque %{count} ans
+      half_a_minute: une demi‑minute
+      less_than_x_seconds:
+        zero: moins d'une seconde
+        one: moins d'une seconde
+        other: moins de %{count} secondes
+      less_than_x_minutes:
+        zero: moins d'une minute
+        one: moins d'une minute
+        other: moins de %{count} minutes
+      over_x_years:
+        one: plus d'un an
+        other: plus de %{count} ans
+      x_seconds:
+        one: 1 seconde
+        other: "%{count} secondes"
+      x_minutes:
+        one: 1 minute
+        other: "%{count} minutes"
+      x_days:
+        one: 1 jour
+        other: "%{count} jours"
+      x_months:
+        one: 1 mois
+        other: "%{count} mois"
+      x_years:
+        one: 1 an
+        other: "%{count} ans"
+    prompts:
+      second: Seconde
+      minute: Minute
+      hour: Heure
+      day: Jour
+      month: Mois
+      year: Année
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: doit être accepté(e)
+      blank: doit être rempli(e)
+      confirmation: ne concorde pas avec %{attribute}
+      empty: doit être rempli(e)
+      equal_to: doit être égal à %{count}
+      even: doit être pair
+      exclusion: n'est pas disponible
+      greater_than: doit être supérieur à %{count}
+      greater_than_or_equal_to: doit être supérieur ou égal à %{count}
+      inclusion: n'est pas inclus(e) dans la liste
+      invalid: n'est pas valide
+      less_than: doit être inférieur à %{count}
+      less_than_or_equal_to: doit être inférieur ou égal à %{count}
+      model_invalid: 'Validation échouée : %{errors}'
+      not_a_number: n'est pas un nombre
+      not_an_integer: doit être un nombre entier
+      odd: doit être impair
+      other_than: doit être différent de %{count}
+      present: doit être vide
+      required: doit exister
+      taken: n'est pas disponible
+      too_long:
+        one: est trop long (pas plus d'un caractère)
+        other: est trop long (pas plus de %{count} caractères)
+      too_short:
+        one: est trop court (au moins un caractère)
+        other: est trop court (au moins %{count} caractères)
+      wrong_length:
+        one: ne fait pas la bonne longueur (doit comporter un seul caractère)
+        other: ne fait pas la bonne longueur (doit comporter %{count} caractères)
+    template:
+      body: 'Veuillez vérifier les champs suivants : '
+      header:
+        one: 'Impossible d''enregistrer ce(tte) %{model} : 1 erreur'
+        other: 'Impossible d''enregistrer ce(tte) %{model} : %{count} erreurs'
+  helpers:
+    select:
+      prompt: Veuillez sélectionner
+    submit:
+      create: Créer un(e) %{model}
+      submit: Enregistrer ce(tte) %{model}
+      update: Modifier ce(tte) %{model}
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "€"
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: milliard
+          million: million
+          quadrillion: million de milliards
+          thousand: millier
+          trillion: billion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: octet
+            other: octets
+          eb: Eo
+          gb: Go
+          kb: ko
+          mb: Mo
+          pb: Po
+          tb: To
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: " et "
+      two_words_connector: " et "
+      words_connector: ", "
+  time:
+    am: am
+    formats:
+      default: "%d %B %Y %Hh %Mmin %Ss"
+      long: "%A %d %B %Y %Hh%M"
+      short: "%d %b %Hh%M"
+    pm: pm

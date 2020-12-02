@@ -1,0 +1,14 @@
+<h1>Vous avez un message de la part de : <%= @contact.name %> </h1>
+
+<h3>Article sélectionné : <%= @article.nom %> ==> Lien vers le produit : <a href="http://localhost:3000/<%= @article.id %>">http://localhost:3000/<%= @article.id %></a></h3>
+
+
+<h4>Message : </h4>
+<p><%= simple_format(@contact.message) %></p>
+
+<ul>
+  <li><h5> e-mail : <%= @contact.email %></h5></li>
+  <li><h5> tel : <%= @contact.tel %></h5></li>
+</ul>
+
+

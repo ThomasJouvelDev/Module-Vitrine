@@ -1,0 +1,55 @@
+.banner-tjd {
+  color: $blanche;
+  text-align: center;
+  height: 65vh;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: $banner-img;
+  h1 {
+    text-shadow: 0 2px 2px black;
+    font-size: 2rem !important;
+  }
+}
+
+.logo {
+  @media (max-width: 630px) {
+    width:576px;
+  }
+  @include sm {
+    width: 375px;
+  }
+  @media (max-width: 375px) {
+    width:280px;
+  }
+}
+
+.bannernous {
+  color: $blanche;
+  text-align: center;
+  height: 50vh;
+  background-size: cover !important;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: $bannernous-img;
+  h1 {
+    text-shadow: 0 2px 2px black;
+  }  
+}
+
+.contact-banner {
+  color: $blanche;
+  text-align: center;
+  height: 120vh;
+  background-size: cover !important;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: $bannercontact-img;
+}

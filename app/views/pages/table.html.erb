@@ -1,0 +1,11 @@
+<% content_for :meta_title, ("#{t(:table)} chez #{INFOS[:societe]}").truncate(65) %>
+<%= render 'shared/banner', cat: :table %>
+<div class="wrapper-principal">
+  <h2><%= t(:table) %></h2>
+  <%= image_tag "bande_blanche.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur"%>
+  <div class="cards-tjd-container">
+    <% @articles.each do |a| %>
+      <%= render 'shared/product-card', product: a %>
+    <% end %>
+  </div>
+</div>

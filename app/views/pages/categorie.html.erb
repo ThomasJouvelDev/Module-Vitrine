@@ -1,0 +1,9 @@
+<% content_for :meta_title, ("Catégories d'articles chez #{INFOS[:societe]}").truncate(65) %>
+<%= render 'shared/banner', cat: :produit %>
+<h2 class="wrapper-principal"><%= t(:categorie) %></h2>
+<p style="text-align: center;"><%= image_tag "bande_blanche.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur"%></p>
+<div class="cards-tjd-container">
+  <% CATEGORIES.each do |cat| %>
+   <%= render 'shared/catego-card', cat: cat %>
+  <% end %>
+</div>

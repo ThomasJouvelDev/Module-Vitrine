@@ -4,6 +4,23 @@
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";
+$number: 'Copse', serif;
+
+h1 {
+  font-size: 2.7rem !important;
+}
+
+h2 {
+  font-size: 2.3rem !important;
+}
+
+h3 {
+  font-size: 1.8rem !important;
+}
+
+h4 {
+  font-size: 1.2rem !important;
+}
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {

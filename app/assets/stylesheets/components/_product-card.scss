@@ -1,0 +1,64 @@
+.product-card-tjd {
+  text-align:center;
+  height: 350px;
+  width: 350px;
+  background-size: cover !important;
+  background-position: center;
+  color: $blanche;
+  position: relative;
+  margin: 35px 15px 35px 15px;
+  border-radius: 3px;
+  box-shadow: 7px 8px 10px #00000030;
+  transition: 0.5s all cubic-bezier(0.21, 1.05, 0.24, 1.41);
+  white-space: nowrap;
+  h3 {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .product-card-tjd-link {
+    position: absolute;
+    top: 0;
+    bottom: -39px;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    // background: black; //for placing link
+  }
+
+  .infos {
+    position:absolute;
+    bottom : -39px;
+    height: 44px;
+    width: 100%;
+    background-color: $blanche;
+    box-shadow: 7px 8px 10px #00000030;
+    border-radius: 3px;
+
+  }
+  .nom {
+    position:absolute;
+    bottom: -30px;
+    left: 5px;
+    color: $principal;
+  }
+
+  .prix {
+    position: absolute;
+    bottom : -30px;
+    right: 10px;
+    color: $principal;
+  }
+}
+
+.product-card-tjd:hover {
+  opacity : 0.8;
+  transform: scale(1.02);
+}
+
+.cards-tjd-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}

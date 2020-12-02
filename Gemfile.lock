@@ -99,6 +99,11 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
+    json (2.3.1)
+    launchy (2.5.0)
+      addressable (~> 2.7)
+    letter_opener (1.7.0)
+      launchy (~> 2.2)
     listen (3.3.3)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -166,6 +171,8 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    recaptcha (5.6.0)
+      json
     redis (4.2.5)
     regexp_parser (1.8.2)
     responders (3.0.1)
@@ -202,6 +209,8 @@ GEM
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
+    traco (5.0.0)
+      activerecord (>= 3.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -241,18 +250,21 @@ DEPENDENCIES
   dotenv-rails
   font-awesome-sass
   jbuilder (~> 2.7)
+  letter_opener
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
   pry-byebug
   pry-rails
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
+  recaptcha
   redis (~> 4.0)
   sass-rails (>= 6)
   selenium-webdriver
   simple_form
   spring
   spring-watcher-listen (~> 2.0.0)
+  traco
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)

@@ -1,33 +1,55 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  # navbar / categories:
+  accueil: "HOME"
+  service: "OUR SERVICES"
+  galerie: 'GALLERY'
+  categories: "CATEGORIES"
+  velo: "Bicycles"
+  chaussure: 'Shoes'
+  miroir: 'Mirrors'
+  boite: 'Boxes, Cases & Others'
+  jouet: 'Toys'
+  poupee: "Dolls"
+  deco: 'Decorations'
+  # mobilier
+  mobilier: 'Furniture'
+  commode: "Chests"
+  bureau: "Desks"
+  siege: "Seating"
+  table: "Tables"
+  #pied de pages
+  mentionslegales_link: 'Legal mentions'
+  pied: '© 2020 - Module Vitrine - All rights reserved - Thomas Jouvel Dev - '
+  #home & general
+  collection: "Our Collection"
+  nouveaute: "New Articles"
+  categorie: "Our Categories"
+  text_collection: "Discover our collection"
+  categories_mobilier: "Our categories of furniture"
+  de: "of"
+  produit: "products"
+  #Contact
+  rdv: 'By appointment: 7 days a week'
+  antiquaire: 'Antiquary Generalist, Works of Art'
+  contact_nous: "CONTACT US"
+  votre_nom: "Your name"
+  votre_email: "Your email"
+  votre_tel: "Your phone number"
+  envoyer: "Send"
+  obligatoire: "Mandatory"
+  optionel: "Optional"
+  votre_message: "Your message..."
+  contact_article: "Contact us for this article"
+  erreur: "error(s)"
+  empecher_message: "prevented your message from being sent"
+  merci_message: "Thank you, your message has been sent !" 
+  #produit
+  prix: "Price"
+  reserve_text: 'RESERVED'
+  vendu_text: 'SOLD'
+  article_vendu: "SOLD"
+  decouvrir: "Related articles"
+  #showroom & services
+  service_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis non mauris ac pharetra. Nam viverra urna sed rhoncus rhoncus. Curabitur a turpis massa. Proin tincidunt dui quis sapien elementum condimentum. Sed varius efficitur bibendum. In gravida nisl non augue pharetra dictum. Suspendisse tincidunt ipsum id urna semper placerat. Vestibulum vitae ornare lorem."
+  service_text2: "Curabitur ac ultricies ex, id pulvinar arcu. In hac habitasse platea dictumst. Proin in dolor dictum, rutrum justo eu, sodales velit. Nulla non ex vitae ipsum vulputate sollicitudin. Ut nibh arcu, dignissim vitae suscipit non, tincidunt eu nisi. Nunc sit amet purus nulla. Maecenas at pretium odio. In hac habitasse platea dictumst. Nullam sed metus dolor. Morbi convallis feugiat ex, id tincidunt dolor tincidunt id. Cras elementum nulla nibh, non imperdiet enim ullamcorper eget. Sed massa nisl, mollis non dui vel, pulvinar faucibus velit."
+  showroom_text: "Morbi lacus diam, tempus id sem eu, eleifend ullamcorper neque. Proin interdum nisl sit amet diam convallis ornare. In porttitor tincidunt lacus et ultricies. Duis convallis convallis blandit. Vestibulum vestibulum, elit id pulvinar volutpat, neque leo dignissim turpis, in placerat urna ligula vel sem. Suspendisse posuere id nibh at lobortis. Integer venenatis lobortis sem ac laoreet."
