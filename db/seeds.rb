@@ -8,8 +8,8 @@
 
 Article.destroy_all
 Category.destroy_all
-# AdminUser.delete_all
-# AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+User.delete_all
+User.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password', admin: true)
 
 Category.create!(id: 1, name: 'Vélo')
 Category.create!(id: 2, name: 'Chaussure')
