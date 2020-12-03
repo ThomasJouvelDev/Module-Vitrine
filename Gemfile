@@ -38,6 +38,7 @@ gem 'devise'
 gem 'letter_opener', group: :development
 gem "recaptcha"
 gem "traco"
+gem 'leaflet-rails'
 
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'

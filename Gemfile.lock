@@ -102,6 +102,8 @@ GEM
     json (2.3.1)
     launchy (2.5.0)
       addressable (~> 2.7)
+    leaflet-rails (1.7.0)
+      rails (>= 4.2.0)
     letter_opener (1.7.0)
       launchy (~> 2.2)
     listen (3.3.3)
@@ -250,6 +252,7 @@ DEPENDENCIES
   dotenv-rails
   font-awesome-sass
   jbuilder (~> 2.7)
+  leaflet-rails
   letter_opener
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
