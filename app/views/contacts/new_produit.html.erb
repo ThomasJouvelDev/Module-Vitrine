@@ -68,7 +68,7 @@
   <%= @backdrop %>
   <%= @fade %>
     <div class="modal-dialog">
-      <div class="modal-content" style="background-image: linear-gradient(-225deg, rgba(95, 95, 95, 0.4) 0%, rgba(0,0,0,0.6) 50%), url(<%= @article.couverture %>);">
+      <div class="modal-content" style="background-image: linear-gradient(-225deg, rgba(95, 95, 95, 0.4) 0%, rgba(0,0,0,0.6) 50%), url(<%= url_for(@article.photo_couverture) %>);">
         <div class="modal-header">
           <h4 class="modal-title" id="exampleModalLabel"><%= t(:contact_article) %></h4>
           <%= link_to contactsproduit_path(@article) do %>
