@@ -14,8 +14,25 @@ index do
   column :vendu
   actions
 end
+
+form do |f|
+  f.inputs do
+    f.input :category
+    f.input :nom_fr
+    f.input :description_fr
+    f.input :nom_en
+    f.input :description_en
+    f.input :prix
+    f.input :vendu
+    f.input :reserve
+    f.input :photo_couverture, as: :file
+    f.input :photos, as: :file, input_html: { multiple: true }
+  end
+  f.actions
+end
+
   #
-  permit_params :nom_fr, :description_fr, :nom_en, :description_en, :prix, :category_id, :vendu, :reserve, :couverture
+  permit_params :nom_fr, :description_fr, :nom_en, :description_en, :prix, :category_id, :vendu, :reserve, :couverture, :photo_couverture, photos: []
   #
   # or
   #

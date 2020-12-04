@@ -1,4 +1,4 @@
-<div class="product-card-tjd" style="background-image: url(<%= product.couverture %>);">
+<div class="product-card-tjd" style="background-image: url(<%= url_for(product.photo_couverture) %>);">
   <div class="infos"></div>
   <div class="nom"> <%= (product.nom).truncate(28) %></div>
   <% if product.vendu %>

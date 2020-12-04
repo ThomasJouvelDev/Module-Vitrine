@@ -10,7 +10,7 @@
   <div class="container">
     <div class="row pt-3">
       <div class="col-sm-6" >
-        <%= link_to((image_tag @article.couverture, alt:"article image", title:"#{@article.nom}", loading:"lazy", :class => "couverture"), @article.couverture) %>
+        <%= link_to((image_tag @article.photo_couverture, alt:"article image", title:"#{@article.nom}", loading:"lazy", :class => "couverture"), @article.photo_couverture) %>
           <% if @article.vendu %>
           <h3 class="reserve"><%= t(:vendu_text) %></h3>
           <% elsif @article.reserve %>
@@ -51,35 +51,11 @@
     </div>
     <div class="flexdiv">
       <div class="photos-article">
-        <div id="lightgallery">
-          <a href="https://images.unsplash.com/photo-1601117077477-875c02e7b789?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-              <img src="https://images.unsplash.com/photo-1601117077477-875c02e7b789?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="photo-article">
-          </a>
-          <a href="https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-              <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="photo-article">
-          </a>
-          <a href="https://images.unsplash.com/photo-1574189555774-7cbcd66d0fcb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80">
-              <img src="https://images.unsplash.com/photo-1574189555774-7cbcd66d0fcb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" class="photo-article">
-          </a>
-          <a href="https://images.unsplash.com/photo-1579656381254-1a60dc1ee3f4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80">
-              <img src="https://images.unsplash.com/photo-1579656381254-1a60dc1ee3f4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" class="photo-article">
-          </a>
-          <a href="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80">
-              <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80" class="photo-article">
-          </a> 
-          <a href="https://images.unsplash.com/photo-1560828343-a0b3d8864d1b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=873&q=80">
-              <img src="https://images.unsplash.com/photo-1560828343-a0b3d8864d1b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=873&q=80" class="photo-article">
-          </a>                               
-      </div>
-
-      <!-- COMMENTED IMAGE  -->
-      <% if false %>
-         <% @article.images.each do |a| %>
-            <%= link_to((cl_image_tag a.image, alt:"article image", title:"#{@article.nom}", loading:"lazy", :class => "photo-article"), a.image.url, data: { toggle: 'lightbox', gallery: 'example-gallery'}) %>
-        <% end  %> 
-      <% end %> 
-      <!-- COMMENTED IMAGE  -->
-
+        <div id="lightgallery">                               
+          <% @article.photos.each do |photo| %>
+            <%= link_to((image_tag photo, alt:"article image", title:"#{@article.nom}", loading:"lazy", :class => "photo-article"), url_for(photo))%>
+          <% end  %> 
+        </div>
       </div>
     </div>
     <h2 class="text-center"><%= t(:decouvrir) %></h2>
