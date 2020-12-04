@@ -1,6 +1,6 @@
 <div class="product-card-tjd" style="background-image: url(<%= product.couverture %>);">
   <div class="infos"></div>
-  <div class="nom"> <%= (product.nom_fr).truncate(28) %></div>
+  <div class="nom"> <%= (product.nom).truncate(28) %></div>
   <% if product.vendu %>
   <div class="prix"><span class="badge badge-primary"><%= t(:vendu_text) %></span></div>
   <% else %>
