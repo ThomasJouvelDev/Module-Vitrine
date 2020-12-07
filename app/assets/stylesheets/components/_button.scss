@@ -6,6 +6,7 @@
   opacity: 0.8;
   font-size: 1.1rem;
   font-family: $headers-font;
+  border: 0.1rem solid $principal;  
   // padding:0.5rem 0.2rem;
 }
 
@@ -21,7 +22,8 @@
   font-size: 1.1rem;
   font-family: $headers-font;
   background-color: $principal;
-  color: $blanche;  
+  color: $blanche;
+  border: 0.1rem solid $blanche;  
 }
 
 .boutonbis:hover {
