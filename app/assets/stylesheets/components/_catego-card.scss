@@ -10,13 +10,14 @@
   margin: 35px 25px 35px 25px;
   border-radius: 5px;
   transition: all 0.25s ease;
-  box-shadow: 7px 8px 10px #00000030;
+  box-shadow: 7px 8px 10px #00000061;
   text-align: center;
   transition: 0.5s all cubic-bezier(0.21, 1.05, 0.24, 1.41);
 }
 
 .catego-card-tjd h2 {
   margin-top: 150px;
+  font-size: 2rem !important;
 }
 
 .catego-card-tjd:hover {

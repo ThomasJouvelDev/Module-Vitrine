@@ -2,7 +2,7 @@
 <%= render 'shared/banner', cat: :poupee %>
 <div class="wrapper-principal">
   <h2><%= t(:poupee) %></h2>
-  <%= image_tag "bande_blanche.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur"%>
+  <%= image_tag "bande_blanche.png", alt: "image divider", title: 'mini-logo', loading: "lazy", class:"bande-couleur"%>
   <div class="cards-tjd-container">
     <% @articles.each do |a| %>
       <%= render 'shared/product-card', product: a %>

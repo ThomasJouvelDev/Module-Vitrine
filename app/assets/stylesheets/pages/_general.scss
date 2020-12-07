@@ -33,13 +33,26 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:700px;
-  @media (max-width: 750px) {
-    width: 450px;
+  width: 50%;
+  @include md {
+    width: 90%;
   }
-  @include sm {
-    width: 250px;
-  }
+}
+
+.tiny-u {
+  border-bottom-color: $secondaire;
+  border-bottom-width: 0.2rem;
+  border-bottom-style: solid;
+  width: 25%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px #0000005e;
+}
+
+.mini-u {
+  border-top-color: $secondaire;
+  border-top-width: 0.2rem;
+  border-top-style: solid;
+  width: 10%;
 }
 
 .margin-divider {
@@ -48,6 +61,10 @@ html {
   }
 }
 // Showroom / Nous 
+
+.w100 {
+  width: 100%;
+}
 
 .showroom {
   width: 100%;

@@ -7,7 +7,7 @@ fr:
   velo: "Vélos"
   chaussure: "Chaussures"
   miroir: "Miroirs"
-  jouet: "Jouets anciens"
+  jouet: "Jouets"
   poupee: "Poupées"
   deco: "Décorations"
   # mobilier / sous categorie 
@@ -20,7 +20,8 @@ fr:
   mentionslegales_link: 'Mentions légales'
   pied: '© 2020 - Module Vitrine - Tous droits réservés - Thomas Jouvel Dev - '
   #home & general
-  collection: "Notre Collection"
+  collection: "LA COLLECTION"
+  nosservices: "Nos Services"
   nouveaute: "Les Nouveautés"
   categorie: "Nos Catégories"
   text_collection: "Découvrez notre collection"
@@ -29,7 +30,7 @@ fr:
   produit: "produits"
   #Contact
   rdv: 'Sur rendez-vous : 7 jours sur 7'
-  antiquaire: "Antiquaire Généraliste, Objets d'Art"
+  antiquaire: "Développeur Web, Full-Stack"
   contact_nous: "CONTACTEZ - NOUS"
   votre_nom: "Votre nom"
   votre_email: "Votre e-mail"
@@ -48,6 +49,10 @@ fr:
   vendu_text: 'VENDU'
   article_vendu: "Article vendu"
   decouvrir: "Articles similaires"
+  # nous / showroom
+  service1: "Exemple de Service"
+  service2: "Un autre Service"
+  service_contact: "Nous contacter pour ce service"
   service_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis non mauris ac pharetra. Nam viverra urna sed rhoncus rhoncus. Curabitur a turpis massa. Proin tincidunt dui quis sapien elementum condimentum. Sed varius efficitur bibendum. In gravida nisl non augue pharetra dictum. Suspendisse tincidunt ipsum id urna semper placerat. Vestibulum vitae ornare lorem."
   service_text2: "Curabitur ac ultricies ex, id pulvinar arcu. In hac habitasse platea dictumst. Proin in dolor dictum, rutrum justo eu, sodales velit. Nulla non ex vitae ipsum vulputate sollicitudin. Ut nibh arcu, dignissim vitae suscipit non, tincidunt eu nisi. Nunc sit amet purus nulla. Maecenas at pretium odio. In hac habitasse platea dictumst. Nullam sed metus dolor. Morbi convallis feugiat ex, id tincidunt dolor tincidunt id. Cras elementum nulla nibh, non imperdiet enim ullamcorper eget. Sed massa nisl, mollis non dui vel, pulvinar faucibus velit."
   showroom_text: "Morbi lacus diam, tempus id sem eu, eleifend ullamcorper neque. Proin interdum nisl sit amet diam convallis ornare. In porttitor tincidunt lacus et ultricies. Duis convallis convallis blandit. Vestibulum vestibulum, elit id pulvinar volutpat, neque leo dignissim turpis, in placerat urna ligula vel sem. Suspendisse posuere id nibh at lobortis. Integer venenatis lobortis sem ac laoreet."

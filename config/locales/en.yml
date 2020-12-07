@@ -21,7 +21,8 @@ en:
   mentionslegales_link: 'Legal mentions'
   pied: '© 2020 - Module Vitrine - All rights reserved - Thomas Jouvel Dev - '
   #home & general
-  collection: "Our Collection"
+  collection: "THE COLLECTION"
+  nosservices: "Our Services"
   nouveaute: "New Articles"
   categorie: "Our Categories"
   text_collection: "Discover our collection"
@@ -30,7 +31,7 @@ en:
   produit: "products"
   #Contact
   rdv: 'By appointment: 7 days a week'
-  antiquaire: 'Antiquary Generalist, Works of Art'
+  antiquaire: "Web Developer, Full-Stack"
   contact_nous: "CONTACT US"
   votre_nom: "Your name"
   votre_email: "Your email"
@@ -49,7 +50,10 @@ en:
   vendu_text: 'SOLD'
   article_vendu: "SOLD"
   decouvrir: "Related articles"
-  #showroom & services
+  # nous / showroom
+  service1: Example of Service
+  service2: An other Service
+  service_contact: "Contact us for this service" 
   service_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis non mauris ac pharetra. Nam viverra urna sed rhoncus rhoncus. Curabitur a turpis massa. Proin tincidunt dui quis sapien elementum condimentum. Sed varius efficitur bibendum. In gravida nisl non augue pharetra dictum. Suspendisse tincidunt ipsum id urna semper placerat. Vestibulum vitae ornare lorem."
   service_text2: "Curabitur ac ultricies ex, id pulvinar arcu. In hac habitasse platea dictumst. Proin in dolor dictum, rutrum justo eu, sodales velit. Nulla non ex vitae ipsum vulputate sollicitudin. Ut nibh arcu, dignissim vitae suscipit non, tincidunt eu nisi. Nunc sit amet purus nulla. Maecenas at pretium odio. In hac habitasse platea dictumst. Nullam sed metus dolor. Morbi convallis feugiat ex, id tincidunt dolor tincidunt id. Cras elementum nulla nibh, non imperdiet enim ullamcorper eget. Sed massa nisl, mollis non dui vel, pulvinar faucibus velit."
   showroom_text: "Morbi lacus diam, tempus id sem eu, eleifend ullamcorper neque. Proin interdum nisl sit amet diam convallis ornare. In porttitor tincidunt lacus et ultricies. Duis convallis convallis blandit. Vestibulum vestibulum, elit id pulvinar volutpat, neque leo dignissim turpis, in placerat urna ligula vel sem. Suspendisse posuere id nibh at lobortis. Integer venenatis lobortis sem ac laoreet."

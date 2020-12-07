@@ -24,7 +24,7 @@
     <%= f.text_area :message, placeholder: t(:votre_message), class:'message' %>
   </div>
   <div class="actions">
-    <%= invisible_recaptcha_tags class:"bouton btn btn-lg", text: t(:envoyer) %>
+    <%= invisible_recaptcha_tags class:"bouton btn btn-lg", text: t(:envoyer).upcase %>
   </div>
 <% end %>
 

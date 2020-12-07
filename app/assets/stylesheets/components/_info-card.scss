@@ -7,6 +7,10 @@
   border-width: 5px;
   background-image: $info-card-img;
   background-size: cover !important;
+  text-shadow: 0 2px 2px black;
+  h3 {
+    margin: 1.5rem;
+  }
   a {
     color: $blanche;
     text-decoration: none;

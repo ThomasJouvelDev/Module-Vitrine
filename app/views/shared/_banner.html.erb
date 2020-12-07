@@ -1,7 +1,9 @@
 <div class="banner-tjd">
   <%= image_tag "Logo_blanc.png", alt:"white logo", title: "Thomas Jouvel Dev Logo", loading: "lazy", class:" logo" %>
   <% if defined?(link) && link.present? %>
-    <a href='/categorie' class='btn bouton btn-lg'><%= t(:collection) %></a><h1 class="sr-only">Antiquités, tableaux, meubles 18ème et 19ème, luminaires...</h1>
+    <h1 class="sr-only">Antiquités, tableaux, meubles 18ème et 19ème, luminaires...</h1>
+    <a href='/services' class='btn boutonbis btn-lg fixed-w'><%= t(:service) %></a>
+    <a href='/categorie' class='btn bouton btn-lg fixed-w'><%= t(:collection) %></a>
   <% else %>
     <h1><%= "#{t(:text_collection)} #{t(:de)} #{t(cat).downcase}" %></h1>
   <% end %>

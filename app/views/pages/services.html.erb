@@ -1,14 +1,25 @@
-<% content_for :meta_title, ("#{t(:qui_sommes_nous)} - #{INFOS[:societe]}").truncate(65) %>
+<% content_for :meta_title, ("#{t(:service)} - #{INFOS[:societe]}").truncate(65) %>
 <div class="bannernous">
-  <%= image_tag "Logo_blanc.png", alt: "logo", title: "Fabienne Lamberger-Ponvianne Logo", loading: "lazy", class:" logo" %>
-  <h1 class="sr-only">Fabienne Lamberger Ponvianne, Qui somme-nous, Description</h1>
+  <%= image_tag "Logo_blanc.png", alt: "logo", title: "Logo", loading: "lazy", class:" logo" %>
+  <h1 class="sr-only"> <%= INFOS[:societe]%> , <%= t(:service) %></h1>
 </div>
 <div class="whitewrap">
   <div class="container">
-    <%= image_tag "bande_gris.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur margin-divider"%>
-      <%= simple_format(t(:service_text), class:'prez') %>
-      <%= simple_format(t(:service_text2), class:'prez') %>
-    <%= image_tag "bande_gris.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur margin-divider"%>
+    <%= image_tag "bande_gris.png", alt: "image divider", title: 'mini-logo', loading: "lazy", class:"bande-couleur w100 margin-divider"%>
+    <br>
+    <h2><%= simple_format(t(:service1)) %></h2>
+    <div class="mini-u"></div>
+    <%= simple_format(t(:service_text), class:'prez') %>
+    <div class="w100 mb-5 d-flex flex-column align-items-center">
+      <%= link_to t(:service_contact), contacts_path , class:'btn boutonbis btn-lg'  %>
+    </div>
+    <h2><%= simple_format(t(:service2)) %></h2>
+    <div class="mini-u"></div>
+    <%= simple_format(t(:service_text2), class:'prez') %>
+        <div class="w100 mb-5 d-flex flex-column align-items-center">
+      <%= link_to t(:service_contact), contacts_path , class:'btn boutonbis btn-lg'  %>
+    </div>
+    <%= image_tag "bande_gris.png", alt: "image divider", title: 'mini-logo', loading: "lazy", class:"bande-couleur w100 margin-divider"%>
   </div>
 </div>
 <%= render 'shared/info-card' %>

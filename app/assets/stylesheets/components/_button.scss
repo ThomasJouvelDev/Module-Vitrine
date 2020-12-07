@@ -4,11 +4,31 @@
   transition: all 0.15s ease;
   margin-top: 20px;
   opacity: 0.8;
-  font-size: 1.2rem;
-  padding:0.5rem 0.2rem;
+  font-size: 1.1rem;
+  font-family: $headers-font;
+  // padding:0.5rem 0.2rem;
 }
 
 .bouton:hover {
   color:$secondaire !important;
   opacity: 1;
+}
+
+.boutonbis {
+  transition: all 0.15s ease;
+  margin-top: 20px;
+  opacity: 1;
+  font-size: 1.1rem;
+  font-family: $headers-font;
+  background-color: $principal;
+  color: $blanche;  
+}
+
+.boutonbis:hover {
+  color:$secondaire !important;
+  background-color: rgba($principal, 0.8);
+}
+
+.fixed-w {
+  width: 15rem;
 }

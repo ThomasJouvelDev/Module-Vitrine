@@ -2,7 +2,7 @@
 <%= render 'shared/banner', cat: :mobilier %>
 <div class="wrapper-blanc">
   <h2><%= t(:categories_mobilier) %></h2>
-<%= image_tag "bande_gris.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur"%>
+<%= image_tag "bande_gris.png", alt: "image divider", title: 'mini-logo', loading: "lazy", class:"bande-couleur"%>
 </div>
 <div class="catego-card-tjd-container">
   <% CATEGORIES_MOBILIER.each do |cat| %>
@@ -11,7 +11,7 @@
 </div>
 <div class="wrapper-principal">
   <h2><%= t(:mobilier) %></h2>
-  <%= image_tag "bande_blanche.png", alt: "image divider", title: 'Fabienne Lamberger Ponvianne mini-logo', loading: "lazy", class:"bande-couleur"%>
+  <%= image_tag "bande_blanche.png", alt: "image divider", title: 'mini-logo', loading: "lazy", class:"bande-couleur"%>
   <div class="cards-tjd-container">
     <% @articles.each do |a| %>
       <%= render 'shared/product-card', product: a %>

@@ -1,6 +1,6 @@
 <% content_for :meta_title, ("Mentions Légales chez #{INFOS[:societe]}").truncate(65) %>
 <div class="bannernous">
-  <%= image_tag "Logo_blanc.png", alt:"white logo", title: "Fabienne Lamberger-Ponvianne Logo", loading: "lazy", class:" logo" %>
+  <%= image_tag "Logo_blanc.png", alt:"white logo", title: "Logo", loading: "lazy", class:" logo" %>
   <h1>Mentions Légales & Politique de Confidentialité</h1>
 </div>
 
@@ -12,9 +12,9 @@
   <h2>INFORMATIONS SUR LA SOCIÉTÉ</h2>
   <p><%= simple_format("Le site #{INFOS[:societe]} se trouvant à l’URL #{INFOS[:site]} est la propriété de #{INFOS[:nom]}, domicilié au #{INFOS[:adresse]}
 
-Numéro et ville d’inscription au RCS ou au Répertoire des métiers : RCS LYON - 353 093 628
-Numéro d’assujettissement à la TVA (CGI, art. 286 ter) : FR353093628
-SIRET : 35309362800025
+Numéro et ville d’inscription au RCS ou au Répertoire des métiers : #{INFOS[:RCS]}
+Numéro d’assujettissement à la TVA (CGI, art. 286 ter) : #{INFOS[:TVA]}
+SIRET : #{INFOS[:SIRET]}
 
 Directeur/Directrice de publication : #{INFOS[:nom]}
 Webmaster : Thomas JOUVEL (thomas.jouvel@gmail.com)") %></p>

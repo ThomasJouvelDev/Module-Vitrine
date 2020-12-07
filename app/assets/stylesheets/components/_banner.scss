@@ -15,15 +15,16 @@
 }
 
 .logo {
-  @media (max-width: 630px) {
-    width:576px;
-  }
-  @include sm {
-    width: 375px;
-  }
-  @media (max-width: 375px) {
-    width:280px;
-  }
+  width: 16rem;
+  // @media (max-width: 630px) {
+  //   width:576px;
+  // }
+  // @include sm {
+  //   width: 375px;
+  // }
+  // @media (max-width: 375px) {
+  //   width:280px;
+  // }
 }
 
 .bannernous {
