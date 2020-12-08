@@ -1,6 +1,6 @@
 <% content_for :meta_title, ("#{@article.nom} chez #{INFOS[:societe]}").truncate(65) %>
 <% content_for :meta_description, (@article.description).truncate(165) %>
-<% content_for :meta_image, @article.couverture %>
+<% content_for :meta_image, url_for(@article.photo_couverture) %>
 <% content_for :meta_image_alt, "Photo de #{@article.nom}" %>
 <% content_for :meta_image_width, "1200" %>
 <% content_for :meta_image_height, "1200" %>

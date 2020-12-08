@@ -13,6 +13,7 @@
   white-space: nowrap;
   h3 {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
   }
 
   .product-card-tjd-link {
@@ -38,7 +39,7 @@
   .nom {
     position:absolute;
     bottom: -30px;
-    left: 5px;
+    left: 10px;
     color: $principal;
   }
 
