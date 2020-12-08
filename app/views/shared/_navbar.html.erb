@@ -22,8 +22,8 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <%= link_to t(:categories), categorie_path, class:"dropdown-item nav-link" %>
           <div class="dropdown-divider"></div>
-          <% @cats.each do |cat| %>
-            <%= link_to t(cat.key), cat.key.to_sym, class:"dropdown-item nav-link" %>
+          <% CATEGORIES_NAV.each do |cat| %>
+            <%= link_to t(cat), cat, class:"dropdown-item nav-link" %>
           <% end %>
         </div>
       </li>

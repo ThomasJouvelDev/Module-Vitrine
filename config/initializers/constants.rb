@@ -1,3 +1,5 @@
+CATEGORIES_NAV = [:velo, :chaussure, :mobilier, :poupee, :miroir, :jouet, :deco]
+
 CATEGORIES_ID = {
    1 => [:velo],
    2 => [:chaussure],

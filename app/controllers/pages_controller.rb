@@ -2,9 +2,11 @@ class PagesController < ApplicationController
 
   def home
     @articles = Article.last(12).reverse
+    find_cats
   end
 
   def categorie
+    find_cats
   end
 
   def showroom
@@ -90,7 +92,7 @@ class PagesController < ApplicationController
     @articles.sort_by!(&:created_at).reverse!
   end
 
-private
+  private
 
   def find_cat(id)
     Article.all.each do |a|
@@ -100,4 +102,14 @@ private
     end
   end
 
+  def find_cats
+    @cats = []
+    @cats << Category.find_by(key:'velo')
+    @cats << Category.find_by(key:'chaussure')
+    @cats << Category.find_by(key:'mobilier')
+    @cats << Category.find_by(key:'poupee')
+    @cats << Category.find_by(key:'miroir')
+    @cats << Category.find_by(key:'jouet')
+    @cats << Category.find_by(key:'deco')
+  end
 end
