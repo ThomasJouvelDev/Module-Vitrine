@@ -1,11 +1,4 @@
 class PagesController < ApplicationController
-  def find_cat(id)
-    Article.all.each do |a|
-      if a.category_id == id
-        then @articles.unshift(a)
-      end
-    end
-  end
 
   def home
     @articles = Article.last(12).reverse
@@ -42,6 +35,11 @@ class PagesController < ApplicationController
     find_cat(5)
     find_cat(6)
     @articles.sort_by!(&:created_at).reverse!
+    @souscats = []
+    @souscats << Category.find_by(id: 3)
+    @souscats << Category.find_by(id: 4)
+    @souscats << Category.find_by(id: 5)
+    @souscats << Category.find_by(id: 6)
   end
 
   def commode
@@ -90,6 +88,16 @@ class PagesController < ApplicationController
     @articles = []
     find_cat(10)
     @articles.sort_by!(&:created_at).reverse!
+  end
+
+private
+
+  def find_cat(id)
+    Article.all.each do |a|
+      if a.category_id == id
+        then @articles.unshift(a)
+      end
+    end
   end
 
 end

@@ -32,7 +32,7 @@ form do |f|
 end
 
   #
-  permit_params :nom_fr, :description_fr, :nom_en, :description_en, :prix, :category_id, :vendu, :reserve, :couverture, :photo_couverture, photos: []
+  permit_params :nom_fr, :description_fr, :nom_en, :description_en, :prix, :category_id, :vendu, :reserve, :photo_couverture, photos: []
   #
   # or
   #

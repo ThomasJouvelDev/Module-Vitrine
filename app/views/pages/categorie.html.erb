@@ -3,7 +3,7 @@
 <h2 class="wrapper-principal"><%= t(:categorie) %></h2>
 <p style="text-align: center;"><%= image_tag "bande_blanche.png", alt: "image divider", title: 'mini-logo', loading: "lazy", class:"bande-couleur"%></p>
 <div class="cards-tjd-container">
-  <% CATEGORIES.each do |cat| %>
+  <% @cats.each do |cat| %>
    <%= render 'shared/catego-card', cat: cat %>
   <% end %>
 </div>

@@ -13,7 +13,7 @@
   <%= image_tag "bande_gris.png", alt: "image divider", title: 'mini-logo', loading: "lazy", class:"bande-couleur"%>
 </div>
 <div class="catego-card-tjd-container">
-  <% CATEGORIES.each do |cat| %>
+  <% @cats.each do |cat| %>
    <%= render 'shared/catego-card', cat: cat %>
   <% end %>
 </div>
