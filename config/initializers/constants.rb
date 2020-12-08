@@ -14,12 +14,12 @@ CATEGORIES_ID = {
 }
 
 INFOS = {
-  societe: "Thomas Jouvel Dev",
+  societe: "Module Vitrine",
   siege: "Showroom / Magasin Thomas Jouvel Dev",
   adresse: "3 Rue des Fraisiers, Chaponost 69630",
-  email: "votre@email.fr",
+  email: "dev@thomasjouvel.com",
   tel: "06 43 16 32 47",
-  insta: "#",
+  insta: "https://www.fabienne-lamberger-ponvianne.fr/",
   nom: "Mr. Thomas JOUVEL",
   site: "www.module-vitrine.fr",
   RCS: "RCS LYON - XXX XXX XXX",
