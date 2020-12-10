@@ -8,3 +8,18 @@ document.addEventListener('turbolinks:load', event => {
     page_location: event.data.url
   });
 });
+
+document.addEventListener('turbolinks:load', () => {
+  const getinfo = document.getElementById("getinfo");
+  const sendtag = () => {
+    const name = getinfo.dataset.name;
+    const cat = getinfo.dataset.cat;
+    console.log(cat + name);
+    return window.gtag('event', 'get_infos', {
+      'event_category' : cat,
+      'event_label' : name
+    });
+  };
+
+  if (getinfo) { getinfo.addEventListener("click", sendtag) };
+});
