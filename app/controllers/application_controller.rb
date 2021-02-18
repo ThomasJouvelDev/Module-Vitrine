@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
 
   def default_url_options
-    { host: ENV["HOST"] || "localhost:3000" }
+    { host: ENV["HOST"] || "http://www.module-vitrine.com/" }
     { locale: I18n.locale }
   end
   
